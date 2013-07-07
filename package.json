@@ -1,0 +1,11 @@
+{
+  "name": "onirius",
+  "version": "1.0.0",
+  "dependencies": {
+    "grunt": "~0.4.1"
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-less": "~0.5.2"
+  }
+}
