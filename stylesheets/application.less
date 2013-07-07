@@ -13,6 +13,8 @@
 @headerWidth: 220px;
 @headerWidthHidden: 40px;
 
+@imgUrl: "../images/";
+
 @import url(rebrand/variables.less);
 
 body {
@@ -88,7 +90,7 @@ a {
 }
 
 #header {
-  background: url(../images/bg-body.png) repeat-y scroll left top;
+  background: url(~"@{imgUrl}/bg-body.png") repeat-y scroll left top;
   color: #888888;
   font-size: 11px;
   height: 100%;
@@ -100,12 +102,12 @@ a {
   top: 0;
   width: @headerWidth;
   z-index: 10;
-
+/*
   &:hover {
     .transition(left 100ms linear);
     .box-shadow(0 0 10px rgba(0, 0, 0, 0.7));
     left: 0;
-  }
+  }*/
 
   #quick-search {
     .arial;
@@ -675,18 +677,18 @@ hr {
 }
 
 .nodata, .warning {
-  background: #FFFBCC url(../images/icons/exclamation.png) no-repeat scroll 10px 11px;
+  background: #FFFBCC url(~"@{imgUrl}/icons/exclamation.png") no-repeat scroll 10px 11px;
   border-color: #E6DB55;
   color: #666452;
 }
 
 #content div.flash.notice {
-  background: #D5FFCE url(../images/icons/tick-circle.png) repeat scroll 0 0;
+  background: #D5FFCE url(~"@{imgUrl}/icons/tick-circle.png") repeat scroll 0 0;
   border-color: #9ADF8F;
   color: #556652;
 }
 div.flash.error, #errorExplanation {
-  background: #FFCECE url(../images/icons/cross-circle.png) repeat scroll 0 0;
+  background: #FFCECE url(~"@{imgUrl}/icons/cross-circle.png") repeat scroll 0 0;
   border-color: #DF8F8F;
   color: #665252;
 }
@@ -736,13 +738,13 @@ p{
 }
 
 tr.message.sticky td.subject {
-  background: url("../images/icons/arrow.png") no-repeat scroll 1px 55% transparent;
+  background: url(~"@{imgUrl}/icons/arrow.png") no-repeat scroll 1px 55% transparent;
 }
 
 // Login
 #login-form {
   .border-radius(6px);
-  background: #181619 url(../images/pc-bg-big.png) top left repeat-x;
+  background: #181619 url(~"@{imgUrl}/pc-bg-big.png") top left repeat-x;
   color: #cccccc;
   height: 100%;
   margin: -7px -10px -10px;
@@ -759,7 +761,7 @@ tr.message.sticky td.subject {
 /*---------- Only Pixel Cookers Theme ----------*/
 
 #sidebar_btn {
-  background: transparent url(../images/menu-arrows.png) no-repeat scroll right -33px;
+  background: transparent url(~"@{imgUrl}/menu-arrows.png") no-repeat scroll right -33px;
   cursor: w-resize;
   height: 20px;
   margin: 0;
