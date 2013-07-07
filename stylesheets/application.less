@@ -750,11 +750,32 @@ tr.message.sticky td.subject {
   margin: -7px -10px -10px;
   min-height: 617px;
 
+  form {
+    display:none;
+  }
+
   table{
     background: none;
     border: none;
     margin-top: 0;
     padding-top: 200px;
+  }
+}
+
+body .button-login {
+  background: url(~"@{imgUrl}google-button.jpg") no-repeat 0 0;
+  border: none;
+  cursor: pointer;
+  display: block;
+  height: 62px;
+  left: 45%;
+  position: absolute;
+  top: 322px;;
+  width: 253px;
+
+  .button-login-text,
+  .button-login-icon {
+    display: none;
   }
 }
 
